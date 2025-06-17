@@ -164,7 +164,8 @@ textarea {
 }
 
 .nav-settings {
-  font-size: 1.5rem0;
+  font-size: 1.5rem;
+  color: var(--title-color);
 }
 
 .nav-toggle {
@@ -237,8 +238,10 @@ textarea {
 }
 /* All for nav upper */
 
+/* home section */
+
 .home-container {
-  padding-block: 2.5rem;
+  padding-block: 4.25rem;
 }
 
 .home-content {
@@ -248,7 +251,7 @@ textarea {
 .home-subtitle {
   font-size: var(--large-font-size);
   font-weight: var(--font-semi-bold);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .home-subtitle span,
@@ -267,7 +270,7 @@ textarea {
 .home-job {
   font-size: var(--h3-font-size);
   font-weight: var(--font-semi-bold);
-  margin-block: 1.5rem 0.6rem;
+  margin-block: 1.5rem 2.5rem;
 }
 
 .home-banner {
@@ -298,6 +301,7 @@ textarea {
   aspect-ratio: 21/25;
   object-fit: cover;
 }
+
 .home-data {
   border: 2px solid var(--border-color);
   background-color: var(--container-color);
@@ -326,7 +330,7 @@ textarea {
 .home-data-no {
   color: var(--title-color);
   font-family: var(--second-font);
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: var(--font-bold);
   text-align: center;
 }
@@ -366,6 +370,7 @@ textarea {
 }
 
 .home-description {
+  color: var(--title-color);
   font-size: var(--large-font-size);
   max-width: 520px;
 }
@@ -433,6 +438,7 @@ textarea {
 /* home upper */
 
 /* style switcher */
+
 .style-switcher {
   position: fixed;
   top: 0;
@@ -513,6 +519,7 @@ textarea {
 }
 
 .style-switcher-close {
+  color: var(--title-color);
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
