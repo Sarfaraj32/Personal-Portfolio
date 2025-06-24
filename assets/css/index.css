@@ -703,3 +703,72 @@ textarea {
   border: 2px solid var(--border-color);
   box-shadow: 4px 4px var(--shadow-color);
 }
+/* all for skills upper */
+
+/* Works Project Part */
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem 2.5rem;
+  margin-bottom: 3.75rem;
+}
+
+.work-item {
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-bold);
+  cursor: pointer;
+  position: relative;
+  transition: color 0.7s var(--transition);
+}
+
+.work-item:hover {
+  color: var(--first-color);
+}
+
+.work-item::before {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--first-color);
+  transition: width 0.3s var(--transition);
+}
+
+.active-work {
+  color: var(--first-color);
+}
+
+.active-work::before {
+  width: 60%;
+}
+
+.work-container {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.work-img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.work-category {
+  color: var(--first-color);
+  font-size: var(--smaller-font-size);
+}
+
+.work-title {
+  font-size: var(--h3-font-size);
+  margin-block: 0.75rem 1.75rem;
+}
+
+.work-description {
+  min-height: 125px;
+}
