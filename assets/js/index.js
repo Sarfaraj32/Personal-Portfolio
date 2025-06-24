@@ -48,3 +48,22 @@ document.querySelectorAll('input[name="body-theme"]').forEach((input) => {
     document.body.className = currentTheme;
   });
 });
+
+// Swiper slider functionality
+var servicesSwiper = new Swiper(".services-swiper", {
+  spaceBetween: 32,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1208: {
+      slidesPerView: 3,
+    },
+  },
+});

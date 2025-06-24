@@ -9,6 +9,10 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -165,6 +169,94 @@
           </div>
         </div>
       </section>
+
+      <section class="services section">
+        <h2 class="section-title" data-title="My Services">What I Do</h2>
+
+        <div class="container">
+          <div class="swiper services-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide card">
+                <h4 class="services-subtitle">Web Development</h4>
+
+                <h3 class="services-title">Full-Stack Web Apps</h3>
+                <p class="services-description">
+                  Build fully responsive, dynamic websites using the MERN stack
+                  (MongoDB, Express, React, Node.js). From clean front-end
+                  interfaces to robust back-end APIs — everything crafted for
+                  performance and scale.
+                </p>
+
+                <a href="" class="link"
+                  >See More <i class="ri-arrow-right-line link-icon"></i
+                ></a>
+              </div>
+
+              <div class="swiper-slide card">
+                <h4 class="services-subtitle">Backend Integration</h4>
+
+                <h3 class="services-title">API & Server Logic</h3>
+                <p class="services-description">
+                  Design and develop secure RESTful APIs, authentication
+                  systems, and server-side logic using Node.js and Express.
+                  Scalable solutions tailored to your business logic.
+                </p>
+
+                <a href="" class="link"
+                  >See More <i class="ri-arrow-right-line link-icon"></i
+                ></a>
+              </div>
+
+              <div class="swiper-slide card">
+                <h4 class="services-subtitle">Front-End Design</h4>
+
+                <h3 class="services-title">UI/UX with React.js</h3>
+                <p class="services-description">
+                  Create interactive, intuitive, and mobile-friendly user
+                  interfaces using React. Focus on clean design, reusable
+                  components, and excellent user experience.
+                </p>
+
+                <a href="" class="link"
+                  >See More <i class="ri-arrow-right-line link-icon"></i
+                ></a>
+              </div>
+
+              <div class="swiper-slide card">
+                <h4 class="services-subtitle">Database Management</h4>
+
+                <h3 class="services-title">MongoDB & Data Handling</h3>
+                <p class="services-description">
+                  Develop efficient and scalable data models with MongoDB.
+                  Handle CRUD operations, indexing, and data security for
+                  high-performance apps.
+                </p>
+
+                <a href="" class="link"
+                  >See More <i class="ri-arrow-right-line link-icon"></i
+                ></a>
+              </div>
+
+              <div class="swiper-slide card">
+                <h4 class="services-subtitle">Deployment & Maintenance</h4>
+
+                <h3 class="services-title">Launch & Support</h3>
+                <p class="services-description">
+                  Deploy apps on platforms like Vercel, Netlify, or Heroku.
+                  Continuous maintenance, version control with Git/GitHub, and
+                  performance monitoring for production-ready delivery.
+                </p>
+
+                <a href="" class="link"
+                  >See More <i class="ri-arrow-right-line link-icon"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <div class="style-switcher" id="style-switcher">
@@ -232,6 +324,7 @@
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/assets/js/index.js"></script>
   </body>
 </html>
