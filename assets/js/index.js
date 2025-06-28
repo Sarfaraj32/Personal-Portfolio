@@ -116,3 +116,60 @@ accordionItems.forEach((item) => {
     });
   });
 });
+
+// Email js functionality
+
+const contactForm = document.getElementById("contact-form");
+const contactName = document.getElementById("contact-name");
+const contactEmail = document.getElementById("contact-email");
+const contactSubject = document.getElementById("contact-subject");
+const contactMessage = document.getElementById("contact-message");
+const message = document.getElementById("message");
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  if (
+    contactName.value === "" ||
+    contactEmail.value === "" ||
+    contactSubject.value === "" ||
+    contactMessage.value === ""
+  ) {
+    message.classList.remove("color-first");
+    message.classList.add("color-red");
+    message.textContent = "Write all the input fields.";
+
+    setTimeout(() => {
+      message.textContent = "";
+    }, 3000);
+  } else {
+    emailjs
+      .sendForm(
+        "service_skcdoe9",
+        "template_m8ozcp6",
+        "#contact-form",
+        "TkSyvBquOHourc9mg"
+      )
+      .then(
+        () => {
+          message.classList.add("color-first");
+          message.textContent = "Message sent successfully ✔";
+
+          setTimeout(() => {
+            message.textContent = "";
+          }, 5000);
+        },
+        (error) => {
+          alert(
+            "Oops! Something went wrong. Please try again later., " + error
+          );
+        }
+      );
+    contactName.value = "";
+    contactEmail.value = "";
+    contactSubject.value = "";
+    contactMessage.value = "";
+  }
+};
+
+contactForm.addEventListener("submit", sendEmail);

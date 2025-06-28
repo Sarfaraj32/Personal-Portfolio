@@ -784,6 +784,110 @@
           </div>
         </div>
       </section>
+
+      <section class="contact section">
+        <h2 class="section-title" data-title="Let's Talk About Ideas">
+          Contact Me
+        </h2>
+
+        <div class="contact-container container grid">
+          <div class="contact-content">
+            <div class="contact-card">
+              <span class="contact-icon">
+                <i class="ri-map-2-line"></i>
+              </span>
+
+              <div>
+                <h3 class="contact-title">Address</h3>
+                <p class="contact-data">
+                  14th cross road, 2nd Block, Rt nagar, Bengaluru, Karnataka -
+                  560032
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <span class="contact-icon">
+                <i class="ri-mail-line"></i>
+              </span>
+
+              <div>
+                <h3 class="contact-title">Email</h3>
+                <p class="contact-data">sarfaraj.holistify@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <span class="contact-icon">
+                <i class="ri-contacts-book-2-line"></i>
+              </span>
+
+              <div>
+                <h3 class="contact-title">Phone</h3>
+                <p class="contact-data">+91 6009 753 546</p>
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact-form grid" id="contact-form">
+            <div class="contact-form-group grid">
+              <div class="contact-form-div">
+                <label for="" class="contact-form-label"
+                  >Your Full Name <b>*</b></label
+                >
+                <input
+                  type="text"
+                  name="name"
+                  class="contact-form-input"
+                  id="contact-name"
+                />
+              </div>
+
+              <div class="contact-form-div">
+                <label for="" class="contact-form-label"
+                  >Your Email Address <b>*</b></label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  class="contact-form-input"
+                  id="contact-email"
+                />
+              </div>
+            </div>
+
+            <div class="contact-form-div">
+              <label for="" class="contact-form-label"
+                >Your Subject <b>*</b></label
+              >
+              <input
+                type="text"
+                name="subject"
+                class="contact-form-input"
+                id="contact-subject"
+              />
+            </div>
+
+            <div class="contact-form-div">
+              <label for="" class="contact-form-label"
+                >Your Message <b>*</b></label
+              >
+              <textarea
+                class="contact-form-input contact-form-area"
+                id="contact-message"
+                name="message"
+              ></textarea>
+            </div>
+
+            <div class="contact-submit">
+              <span>* Accept the terms and conditions.</span>
+              <button type="submit" class="btn">Send Message</button>
+            </div>
+
+            <p class="message" id="message"></p>
+          </form>
+        </div>
+      </section>
     </main>
 
     <div class="style-switcher" id="style-switcher">
@@ -853,6 +957,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/assets/js/mixitup.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <script src="/assets/js/index.js"></script>
   </body>
 </html>
