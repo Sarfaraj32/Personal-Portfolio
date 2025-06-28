@@ -57,6 +57,29 @@
   --shadow-color: hsla(var(--hue), 0%, 100%, 0.2);
 }
 
+/* Force all text elements to use white in dark mode */
+.dark,
+.dark body,
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark p,
+.dark span,
+.dark a,
+.dark li,
+.dark label,
+.dark .section-title,
+.dark .section-title::after,
+.dark .home-title,
+.dark .home-description,
+.dark .contact-title,
+.dark .footer-copyright {
+  color: var(--title-color) !important;
+}
+
 .dark .shape {
   filter: invert(1);
 }
