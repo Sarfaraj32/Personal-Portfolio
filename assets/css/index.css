@@ -113,7 +113,7 @@ textarea {
 
 /* Sections */
 .section {
-  padding-block: 7rem;
+  padding-block: 7rem 3.5rem;
 }
 
 /* slider dei semba */
@@ -121,7 +121,7 @@ textarea {
 .section-title {
   font-size: var(--h1-font-size);
   text-align: center;
-  margin-bottom: 4.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .section-title::after {
@@ -138,6 +138,11 @@ textarea {
   max-width: 1320px;
   margin-inline: auto;
   padding-inline: 1.5rem;
+  position: relative;
+}
+
+.container:not(.nav, .home-container) {
+  padding-block: 3.75rem;
 }
 
 .grid {
@@ -222,6 +227,7 @@ textarea {
   height: 100%;
   padding: 9rem 0 0 9.5rem;
   transition: right 1s var(--transition);
+  overflow: hidden;
 }
 
 .nav-list {
@@ -257,6 +263,11 @@ textarea {
   bottom: 12px;
 }
 /* All for nav upper */
+
+/* main  */
+.main {
+  overflow: hidden;
+}
 
 /* home section */
 
@@ -420,6 +431,7 @@ textarea {
   padding: 1rem 2.5rem;
   border-radius: 3rem;
   transition: color 0.7s var(--transition);
+  z-index: 1;
 }
 
 .btn:hover {
@@ -603,6 +615,88 @@ textarea {
 
 .link:hover .link-icon {
   transform: translateX(0.5rem);
+}
+
+/* decoraition part */
+.section-deco {
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: var(--border-color);
+  z-index: 1;
+}
+
+.deco-left {
+  left: -72px;
+}
+
+.deco-right {
+  right: -72px;
+}
+
+.section-deco::before,
+.section-deco::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--container-color);
+  border: 2px solid var(--border-color);
+  box-shadow: 4px 4px var(--shadow-color);
+}
+
+.section-deco::before {
+  top: 0;
+  transform: translate(-50%, -100%);
+}
+
+.section-deco::after {
+  bottom: 0;
+  transform: translate(-50%, 100%);
+}
+
+.section-deco .shape {
+  max-width: 226px;
+  height: 226px;
+  bottom: -206px;
+}
+
+.deco-left .shape {
+  left: -166px;
+}
+
+.deco-right .shape {
+  right: -166px;
+}
+
+.section:nth-child(odd) {
+  background-color: linear-gradient(
+    0deg,
+    var(--container-color) 0%,
+    var(--body-color) 100%
+  );
+}
+
+.section:nth-child(even) {
+  background-color: linear-gradient(
+    180deg,
+    var(--container-color) 0%,
+    var(--body-color) 100%
+  );
+}
+
+.header-deco {
+  height: 70%;
+  top: 128px;
+  left: 75px;
+}
+
+.header-deco .shape {
+  top: -210px;
+  left: -168px;
 }
 
 /* swiper */
