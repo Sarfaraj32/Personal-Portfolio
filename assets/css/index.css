@@ -963,3 +963,27 @@ textarea {
 .color-first {
   color: var(--first-color);
 }
+/* contact upper */
+
+/* footer part */
+.footer {
+  border-top: 1px solid var(--shadow-color);
+  background-color: var(--container-color);
+  padding-block: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-copyright {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-bold);
+}
+
+.footer-copyright span {
+  color: var(--first-color);
+}
+/* footer section upper */
