@@ -270,6 +270,11 @@ textarea {
 }
 /* All for nav upper */
 
+/* active link */
+.active-link {
+  color: var(--first-color);
+}
+
 /* change header color */
 .bg-header {
   background-color: var(--container-color);

@@ -196,3 +196,27 @@ const linkAction = () => {
 };
 
 navLink.forEach((n) => n.addEventListener("click", linkAction));
+
+// scroll section active link
+const sections = document.querySelectorAll("section[id]");
+
+const scrollActive = () => {
+  const scrollY = window.pageYOffset;
+
+  sections.forEach((current) => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 58; // Adjusted for header height
+    const sectionId = current.getAttribute("id");
+    const sectionsClass = document.querySelectorAll(
+      ".nav-menu a[href*=" + sectionId + "]"
+    );
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      sectionsClass.forEach((el) => el.classList.add("active-link"));
+    } else {
+      sectionsClass.forEach((el) => el.classList.remove("active-link"));
+    }
+  });
+};
+
+window.addEventListener("scroll", scrollActive);
