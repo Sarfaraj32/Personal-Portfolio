@@ -264,6 +264,11 @@ textarea {
 }
 /* All for nav upper */
 
+/* change header color */
+.bg-header {
+  background-color: var(--container-color);
+}
+
 /* main  */
 .main {
   overflow: hidden;

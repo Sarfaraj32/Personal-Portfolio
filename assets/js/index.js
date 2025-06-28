@@ -173,3 +173,26 @@ const sendEmail = (e) => {
 };
 
 contactForm.addEventListener("submit", sendEmail);
+
+// Change background header on scroll
+const scrollHeader = () => {
+  const header = document.getElementById("header");
+
+  this.scrollY >= 20
+    ? header.classList.add("bg-header")
+    : header.classList.remove("bg-header");
+};
+
+window.addEventListener("scroll", scrollHeader);
+
+// remove menu mobile on scroll
+const navLink = document.querySelectorAll(".nav-link");
+
+const linkAction = () => {
+  const navMenu = document.getElementById("nav-menu");
+
+  navToggle.classList.remove("animate-toggle");
+  navMenu.classList.remove("show-menu");
+};
+
+navLink.forEach((n) => n.addEventListener("click", linkAction));
